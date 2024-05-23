@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <link rel="stylesheet" href="css/HomePage.css">
+    <header>
+        <div class="header">
+                <a href="HomePage.html" class="Logo">Готельний Спутник</a>
+                    <a class="navigation" href="Information.html">Про нас</a>
+                    <a class="navigation2" href="Login.html">Увійти</a>
+                    <a class="navigation3" href="Registration.html">Реєстрація</a>
+            </div>
+</header>
+</head>
+<body>
+    <div class="Content">
+        <h1>Ласкаво просимо до готельного спутника!</h1>
+        <p>Введіть електронну пошту та пароль.</p>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2024 Готельний Спутник</p>
+        <p>Контакти</p>
+        <p>Наші соціальні мережі</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.youtube.com">Youtube</a>
+        </div>
+        <p>Політика конфіденції</p>
+        <p>Згода на обробку персональних даних</p>
+        <p>Всі права захищено</p>
+      </footer>
+
+      <div class="registration-container">
+        <h2>Реєстрація</h2>
+        <form action="registration.php" method="POST">
+          <label for="username">Електронна пошта:</label>
+          <input type="text" id="Email" name="Email" required>
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+          <label for="password">Повторіть пароль:</label>
+          <input type="password2" id="password2" name="password2" required>
+          <input type="submit" value="Реєстрація">
+        </form>
+      </div>
+</body>
+</html>
+
+<style>
+.header {
+    display: fixed;
+    background-color: black;
+    max-width: 100%;
+    padding: 20px 20px;
+}   
+.navigation {
+    color: #FFBD8D;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    display: fixed;
+    max-width: 100%;
+    padding: 0% 0% 0% 76% ;
+}
+
+.navigation2 {
+    color: #FFBD8D;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    display: fixed;
+    max-width: 100%;
+    padding: 0% 0% 0% 1% ;
+}
+
+.navigation3 {
+    color: #FFBD8D;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    display: fixed;
+    max-width: 100%;
+    padding: 0% 0% 0% 1% ;
+}
+.Logo { 
+    color: #FFBD8D;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+}
+
+.Content {
+    margin: center;
+    max-width: 100%;
+    padding: 0% 0% 0% 0% ;
+    text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: #FFBD8D;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+}
+
+.footer a {
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 0% 0% 0% 0%;
+    text-align: left;
+    color: #FFBD8D;
+    text-decoration: none;
+}
+
+.footer p {
+    padding: 0% 2% 0% 0%;
+    margin: 0;
+    color: #FFBD8D;
+}
+
+html, body {
+    background-color: #FFBD8D;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.registration-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.registration-container h2 {
+  margin-top: 0;
+}
+
+.registration-container label {
+  display: block;
+  margin-top: 10px;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="password"] {
+    border: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.registration-container input[type="password2"] {
+    border: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.registration-container input[type="submit"] {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-left: 10px; 
+    margin-top: 20px;
+}
+
+.registration-container input[type="submit"]:hover {
+  background-color: black;
+}
+</style>

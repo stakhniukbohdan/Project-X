@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header>
+        <div class="header">
+                <a href="HomePage.html" class="Logo">Готельний Спутник</a>
+                    <a class="navigation" href="Information.html">Про нас</a>
+                    <a class="navigation2" href="Login.html">Увійти</a>
+                    <a class="navigation3" href="Registration.html">Реєстрація</a>
+            </div>
+</header>
+</head>
+<body>
+    <div class="Content">
+        <h1>Ласкаво просимо до готельного спутника!</h1>
+        <p>Знайдіть свій ідеальний готель для будь-якої подорожі.</p>
+        <form action="Search.html">
+            <input type="text" placeholder="Місто або готель" class="search-input">
+            <button type="submit" class="search-button">Знайти</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Готельний Спутник</p>
+        <p>Контакти</p>
+        <p>Наші соціальні мережі</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.youtube.com">Youtube</a>
+        </div>
+        <p>Політика конфіденції</p>
+        <p>Згода на обробку персональних даних</p>
+        <p>Всі права захищено</p>
+      </footer>
+
+      <div class="slider">
+        <img src="../Images/image1.jpg" alt="Image 1">
+        <img src="../Images/image2.jpg" alt="Image 2">
+        <img src="../Images/image3.jpg" alt="Image 3">
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.slider');
+  const images = document.querySelectorAll('.slider img');
+  let currentIndex = 0;
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function showImage(index) {
+    images.forEach((image, i) => {
+      if (i === index) {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
+  }
+  setInterval(nextImage, 3000);
+
+});
+      </script>
+</body>
+</html>
+
+<style>
+.search-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+} 
+.search-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-left: 10px;    
+    }
+
+.header {
+    display: fixed;
+    background-color: black;
+    max-width: 100%;
+    padding: 20px 20px;
+}   
+.navigation {
+    color: #FFBD8D;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    display: fixed;
+    max-width: 100%;
+    padding: 0% 0% 0% 76% ;
+}
+
+.navigation2 {
+    color: #FFBD8D;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    display: fixed;
+    max-width: 100%;
+    padding: 0% 0% 0% 1% ;
+}
+
+.navigation3 {
+    color: #FFBD8D;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    display: fixed;
+    max-width: 100%;
+    padding: 0% 0% 0% 1% ;
+}
+.Logo { 
+    color: #FFBD8D;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+}
+
+.Content {
+    font-size: 20px;
+    margin: center;
+    max-width: 100%;
+    padding: 0% 0% 0% 0% ;
+    text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: #FFBD8D;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+}
+
+.footer a {
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 0% 0% 0% 0%;
+    text-align: left;
+    color: #FFBD8D;
+    text-decoration: none;
+}
+
+.footer p {
+    padding: 0% 2% 0% 0%;
+    margin: 0;
+    color: #FFBD8D;
+}
+
+html, body {
+    background-color: #FFBD8D;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    margin: center;
+    margin-top: 5%;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+    position: relative;
+    height: 500px;
+    max-width: 100%;
+    padding: 0% 0% 0% 0% ;
+}
+
+.slider img {
+    height: auto;
+    display: none;
+    padding: 0% 0% 0% 0% ;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 500px;
+}
+
+.slider img:first-child {
+    display: block;
+    padding: 0% 0% 0% 0% ;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    max-width: 100%;
+}
+</style>
+
